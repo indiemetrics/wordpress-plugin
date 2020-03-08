@@ -171,16 +171,6 @@ class Arnold_Analytics_Admin_API {
 				$html .= '<input id="' . $option_name . '" class="image_data_field" type="hidden" name="' . $option_name . '" value="' . $data . '"/><br/>' . "\n";
 				break;
 
-			case 'color':
-				//phpcs:disable
-				?><div class="color-picker" style="position:relative;">
-					<input type="text" name="<?php esc_attr_e( $option_name ); ?>" class="color" value="<?php esc_attr_e( $data ); ?>" />
-					<div style="position:absolute;background:#FFF;z-index:99;border-radius:100%;" class="colorpicker"></div>
-				</div>
-				<?php
-				//phpcs:enable
-				break;
-
 			case 'editor':
 				wp_editor(
 					$data,
