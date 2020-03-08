@@ -206,10 +206,6 @@ class Arnold_Analytics {
 	public function enqueue_scripts() {
   		$is_running = !current_user_can('editor') && !current_user_can('administrator');
 		if ($is_running) {
-			//wp_enqueue_script($this->_token . '-frontend', 'https://app.usearnold.com/assets/pixel.min.js', array(), null, true);
-			/*add_action('wp_footer', function() {
-				echo '<noscript><img src="https://app.usearnold.com/hello?key=' . get_option('wparnold_script_key') . '" alt=""></noscript>' . PHP_EOL;
-			}, 10);*/
 			add_action('wp_footer', function() {
 				echo '<script src="https://app.usearnold.com/assets/pixel.min.js" data-arnold-analytics="' . get_option('wparnold_script_key') . '" data-arnold-analytics-location="' . get_option('wparnold_location_precision') . '"></script>' . PHP_EOL;
 				echo '<noscript><img src="https://app.usearnold.com/hello?key=' . get_option('wparnold_script_key') . '" alt=""></noscript>' . PHP_EOL;
@@ -220,9 +216,6 @@ class Arnold_Analytics {
 				echo '<!-- Arnold Analytics: Not logging requests from admins -->' . PHP_EOL;
 			}, 10);
 		}
-
-		//wp_register_script( $this->_token . '-frontend', esc_url( $this->assets_url ) . 'js/frontend' . $this->script_suffix . '.js', array( 'jquery' ), $this->_version, true );
-		//wp_enqueue_script( $this->_token . '-frontend' );
 	} // End enqueue_scripts ()
 
 	/**
@@ -248,8 +241,7 @@ class Arnold_Analytics {
 	 * @since   1.0.0
 	 */
 	public function admin_enqueue_scripts( $hook = '' ) {
-		//wp_register_script( $this->_token . '-admin', esc_url( $this->assets_url ) . 'js/admin' . $this->script_suffix . '.js', array( 'jquery' ), $this->_version, true );
-		//wp_enqueue_script( $this->_token . '-admin' );
+		
 	} // End admin_enqueue_scripts ()
 
 	/**

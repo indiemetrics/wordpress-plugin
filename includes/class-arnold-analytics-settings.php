@@ -156,7 +156,7 @@ class Arnold_Analytics_Settings {
 	 * @return void
 	 */
 	public function settings_assets() {
-
+		/*
 		// We're including the farbtastic script & styles here because they're needed for the colour picker
 		// If you're not including a colour picker field then you can leave these calls out as well as the farbtastic dependency for the wpt-admin-js script below.
 		wp_enqueue_style( 'farbtastic' );
@@ -168,6 +168,7 @@ class Arnold_Analytics_Settings {
 
 		wp_register_script( $this->parent->_token . '-settings-js', $this->parent->assets_url . 'js/settings' . $this->parent->script_suffix . '.js', array( 'farbtastic', 'jquery' ), '1.0.0', true );
 		wp_enqueue_script( $this->parent->_token . '-settings-js' );
+		*/
 	}
 
 	/**
@@ -213,131 +214,6 @@ class Arnold_Analytics_Settings {
 				),
 			)
 		);
-
-		/*$settings['standard'] = array(
-			'title'       => __( 'Standard', 'arnold-analytics' ),
-			'description' => __( 'These are fairly standard form input fields.', 'arnold-analytics' ),
-			'fields'      => array(
-				array(
-					'id'          => 'text_field',
-					'label'       => __( 'Some Text', 'arnold-analytics' ),
-					'description' => __( 'This is a standard text field.', 'arnold-analytics' ),
-					'type'        => 'text',
-					'default'     => '',
-					'placeholder' => __( 'Placeholder text', 'arnold-analytics' ),
-				),
-				array(
-					'id'          => 'password_field',
-					'label'       => __( 'A Password', 'arnold-analytics' ),
-					'description' => __( 'This is a standard password field.', 'arnold-analytics' ),
-					'type'        => 'password',
-					'default'     => '',
-					'placeholder' => __( 'Placeholder text', 'arnold-analytics' ),
-				),
-				array(
-					'id'          => 'secret_text_field',
-					'label'       => __( 'Some Secret Text', 'arnold-analytics' ),
-					'description' => __( 'This is a secret text field - any data saved here will not be displayed after the page has reloaded, but it will be saved.', 'arnold-analytics' ),
-					'type'        => 'text_secret',
-					'default'     => '',
-					'placeholder' => __( 'Placeholder text', 'arnold-analytics' ),
-				),
-				array(
-					'id'          => 'text_block',
-					'label'       => __( 'A Text Block', 'arnold-analytics' ),
-					'description' => __( 'This is a standard text area.', 'arnold-analytics' ),
-					'type'        => 'textarea',
-					'default'     => '',
-					'placeholder' => __( 'Placeholder text for this textarea', 'arnold-analytics' ),
-				),
-				array(
-					'id'          => 'single_checkbox',
-					'label'       => __( 'An Option', 'arnold-analytics' ),
-					'description' => __( 'A standard checkbox - if you save this option as checked then it will store the option as \'on\', otherwise it will be an empty string.', 'arnold-analytics' ),
-					'type'        => 'checkbox',
-					'default'     => '',
-				),
-				array(
-					'id'          => 'select_box',
-					'label'       => __( 'A Select Box', 'arnold-analytics' ),
-					'description' => __( 'A standard select box.', 'arnold-analytics' ),
-					'type'        => 'select',
-					'options'     => array(
-						'drupal'    => 'Drupal',
-						'joomla'    => 'Joomla',
-						'wordpress' => 'WordPress',
-					),
-					'default'     => 'wordpress',
-				),
-				array(
-					'id'          => 'radio_buttons',
-					'label'       => __( 'Some Options', 'arnold-analytics' ),
-					'description' => __( 'A standard set of radio buttons.', 'arnold-analytics' ),
-					'type'        => 'radio',
-					'options'     => array(
-						'superman' => 'Superman',
-						'batman'   => 'Batman',
-						'ironman'  => 'Iron Man',
-					),
-					'default'     => 'batman',
-				),
-				array(
-					'id'          => 'multiple_checkboxes',
-					'label'       => __( 'Some Items', 'arnold-analytics' ),
-					'description' => __( 'You can select multiple items and they will be stored as an array.', 'arnold-analytics' ),
-					'type'        => 'checkbox_multi',
-					'options'     => array(
-						'square'    => 'Square',
-						'circle'    => 'Circle',
-						'rectangle' => 'Rectangle',
-						'triangle'  => 'Triangle',
-					),
-					'default'     => array( 'circle', 'triangle' ),
-				),
-			),
-		);
-
-		$settings['extra'] = array(
-			'title'       => __( 'Extra', 'arnold-analytics' ),
-			'description' => __( 'These are some extra input fields that maybe aren\'t as common as the others.', 'arnold-analytics' ),
-			'fields'      => array(
-				array(
-					'id'          => 'number_field',
-					'label'       => __( 'A Number', 'arnold-analytics' ),
-					'description' => __( 'This is a standard number field - if this field contains anything other than numbers then the form will not be submitted.', 'arnold-analytics' ),
-					'type'        => 'number',
-					'default'     => '',
-					'placeholder' => __( '42', 'arnold-analytics' ),
-				),
-				array(
-					'id'          => 'colour_picker',
-					'label'       => __( 'Pick a colour', 'arnold-analytics' ),
-					'description' => __( 'This uses WordPress\' built-in colour picker - the option is stored as the colour\'s hex code.', 'arnold-analytics' ),
-					'type'        => 'color',
-					'default'     => '#21759B',
-				),
-				array(
-					'id'          => 'an_image',
-					'label'       => __( 'An Image', 'arnold-analytics' ),
-					'description' => __( 'This will upload an image to your media library and store the attachment ID in the option field. Once you have uploaded an imge the thumbnail will display above these buttons.', 'arnold-analytics' ),
-					'type'        => 'image',
-					'default'     => '',
-					'placeholder' => '',
-				),
-				array(
-					'id'          => 'multi_select_box',
-					'label'       => __( 'A Multi-Select Box', 'arnold-analytics' ),
-					'description' => __( 'A standard multi-select box - the saved data is stored as an array.', 'arnold-analytics' ),
-					'type'        => 'select_multi',
-					'options'     => array(
-						'linux'   => 'Linux',
-						'mac'     => 'Mac',
-						'windows' => 'Windows',
-					),
-					'default'     => array( 'linux' ),
-				),
-			),
-		);*/
 
 		$settings = apply_filters( $this->parent->_token . '_settings_fields', $settings );
 

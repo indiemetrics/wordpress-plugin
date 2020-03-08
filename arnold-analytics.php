@@ -3,10 +3,10 @@
  * Plugin Name: Arnold Analytics
  * Version: 1.0.0
  * Plugin URI: https://usearnold.com/
- * Description: This is your starter template for your next WordPress plugin.
+ * Description: This is the offical WordPress plugin of Arnold Analytics.
  * Author: Arne Govaerts
  * Author URI: https://usearnold.com/
- * Requires at least: 4.0
+ * Requires at least: 1.0
  * Tested up to: 4.0
  *
  * Text Domain: arnold-analytics
@@ -27,8 +27,8 @@ require_once 'includes/class-arnold-analytics-settings.php';
 
 // Load plugin libraries.
 require_once 'includes/lib/class-arnold-analytics-admin-api.php';
-require_once 'includes/lib/class-arnold-analytics-post-type.php';
-require_once 'includes/lib/class-arnold-analytics-taxonomy.php';
+//require_once 'includes/lib/class-arnold-analytics-post-type.php';
+//require_once 'includes/lib/class-arnold-analytics-taxonomy.php';
 
 /**
  * Returns the main instance of Arnold_Analytics to prevent the need to use globals.
