@@ -5,7 +5,7 @@
  * Plugin URI: https://usearnold.com/
  * Description: This is the offical WordPress plugin of Arnold Analytics.
  * Author: Arne Govaerts
- * Author URI: https://usearnold.com/
+ * Author URI: https://q4.re/
  * Requires at least: 1.0
  * Tested up to: 4.0
  *
