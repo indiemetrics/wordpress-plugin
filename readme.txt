@@ -26,12 +26,6 @@ Installing "Arnold Analytics" can be done either by searching for "Arnold Analyt
 
 After the previous steps, you can add your API key under "Settings > Arnold Analytics".
 
-== Screenshots ==
-
-1. Description of first screenshot named screenshot-1
-2. Description of second screenshot named screenshot-2
-3. Description of third screenshot named screenshot-3
-
 == Frequently Asked Questions ==
 
 = Do I need a paid subscription? =
