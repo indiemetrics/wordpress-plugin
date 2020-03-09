@@ -30,9 +30,13 @@ Installing "Arnold Analytics" can be done either by searching for "Arnold Analyt
 
 == Frequently Asked Questions ==
 
-= What is the plugin template for? =
+= Do I need a paid subscription? =
 
-This plugin template is designed to help you get started with any new WordPress plugin.
+Short answer: No. You do need however register for [Arnold Analytics](https://usearnold.com/?ref=wordpress), at least for the Essential plan, which is free. 
+
+= Where can I see my dashboard? =
+
+You can [see your dashboard here](https://app.usearnold.com).
 
 == Changelog ==
 
