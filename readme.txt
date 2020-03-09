@@ -12,7 +12,9 @@ The offical WordPress plugin of Arnold Analytics. Just the insight that you need
 
 == Description ==
 
-You don’t like to be bothered with technical details, we get that. Web analytics doesn’t need to be complex or invasive. Only the result counts. 
+You don’t like to be bothered with technical details, we get that. Web analytics doesn’t need to be complex or invasive. Only the result counts.
+
+> You need to have an account from [Arnold Analytics](https://usearnold.com/).
 
 == Installation ==
 
@@ -21,6 +23,8 @@ Installing "Arnold Analytics" can be done either by searching for "Arnold Analyt
 1. Download the plugin via [WordPress.org](https://wordpress.org/plugins/) or [Codeberg.org](https://codeberg.org/arnoldanalytics/wordpress-plugin)
 2. Upload the ZIP file through the 'Plugins > Add New > Upload' screen in your WordPress dashboard
 3. Activate the plugin through the 'Plugins' menu in WordPress
+
+After the previous steps, you can add your API key under "Settings > Arnold Analytics".
 
 == Screenshots ==
 
@@ -45,11 +49,11 @@ We encourage you to create an issue on the [Codeberg.org repo](https://codeberg.
 == Changelog ==
 
 = 1.0 =
-* 2020-03-08
+* 2020-03-09
 * Initial release
 
 == Upgrade Notice ==
 
 = 1.0 =
-* 2020-03-08
+* 2020-03-09
 * Initial release
