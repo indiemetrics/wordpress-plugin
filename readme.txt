@@ -19,8 +19,8 @@ You don’t like to be bothered with technical details, we get that. Web analyti
 Installing "Arnold Analytics" can be done either by searching for "Arnold Analytics" via the "Plugins > Add New" screen in your WordPress dashboard, or by using the following steps:
 
 1. Download the plugin via [WordPress.org](https://wordpress.org/plugins/) or [Codeberg.org](https://codeberg.org/arnoldanalytics/wordpress-plugin)
-1. Upload the ZIP file through the 'Plugins > Add New > Upload' screen in your WordPress dashboard
-1. Activate the plugin through the 'Plugins' menu in WordPress
+2. Upload the ZIP file through the 'Plugins > Add New > Upload' screen in your WordPress dashboard
+3. Activate the plugin through the 'Plugins' menu in WordPress
 
 == Screenshots ==
 
