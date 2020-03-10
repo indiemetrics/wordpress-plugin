@@ -26,6 +26,9 @@ Installing "Arnold Analytics" can be done either by searching for "Arnold Analyt
 
 After the previous steps, you can add your API key under "Settings > Arnold Analytics".
 
+== Screenshots ==
+
+
 == Frequently Asked Questions ==
 
 = Do I need a paid subscription? =
@@ -39,6 +42,7 @@ You can [see your dashboard here](https://app.usearnold.com).
 = Where can I post feedback/questions? =
 
 We encourage you to create an issue on the [Codeberg.org repo](https://codeberg.org/arnoldanalytics/wordpress-plugin/issues). Alternatively, you can [contact us by mail](mailto:support@usearnold.com).
+
 
 == Changelog ==
 
