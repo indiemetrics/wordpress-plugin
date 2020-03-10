@@ -2,3 +2,4 @@
 node*
 vendor*
 *.zip
+svn/*
