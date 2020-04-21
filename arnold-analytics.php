@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Indiemetrics
- * Version: 1.0.1
+ * Version: 1.1.0
  * Plugin URI: https://indiemetrics.net
  * Description: This is the offical WordPress plugin of Indiemetrics, previously known as Arnold Analytics.
  * Author: Arne Govaerts

@@ -1,9 +1,9 @@
 {
 	"name": "ArnoldAnalytics/wordpress-plugin",
 	"license": "GPL-2.0-or-later",
-	"description": "The offcial WordPress plugin of Arnold Analytics",
+	"description": "The offcial WordPress plugin of Indiemetrics",
 	"keywords": [
-		"wordpress", "wp", "arnold analytics", "analytics", "plugin"
+		"wordpress", "wp", "arnold analytics", "indiemetrics", "analytics", "plugin"
 	],
 	"support": {
 		"issues": "https://codeberg.org/arnoldanalytics/wordpress-plugin/issues"
