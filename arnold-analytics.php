@@ -1,11 +1,11 @@
 <?php
 /**
- * Plugin Name: Arnold Analytics
- * Version: 1.0.0
- * Plugin URI: https://usearnold.com/
- * Description: This is the offical WordPress plugin of Arnold Analytics.
+ * Plugin Name: Indiemetrics
+ * Version: 1.0.1
+ * Plugin URI: https://indiemetrics.net
+ * Description: This is the offical WordPress plugin of Indiemetrics, previously known as Arnold Analytics.
  * Author: Arne Govaerts
- * Author URI: https://q4.re/
+ * Author URI: https://indiemetrics.net
  * Requires at least: 1.0
  * Tested up to: 4.0
  *
@@ -37,7 +37,7 @@ require_once 'includes/lib/class-arnold-analytics-admin-api.php';
  * @return object Arnold_Analytics
  */
 function arnold_analytics() {
-	$instance = Arnold_Analytics::instance( __FILE__, '1.0.0' );
+	$instance = Arnold_Analytics::instance( __FILE__, '1.0.1' );
 
 	if ( is_null( $instance->settings ) ) {
 		$instance->settings = Arnold_Analytics_Settings::instance( $instance );

@@ -128,8 +128,8 @@ class Arnold_Analytics_Settings {
 			array(
 				'location'    => 'options', // Possible settings: options, menu, submenu.
 				'parent_slug' => 'options-general.php',
-				'page_title'  => __( 'Arnold Analytics', 'arnold-analytics' ),
-				'menu_title'  => __( 'Arnold Analytics', 'arnold-analytics' ),
+				'page_title'  => __( 'Indiemetrics', 'arnold-analytics' ),
+				'menu_title'  => __( 'Indiemetrics', 'arnold-analytics' ),
 				'capability'  => 'manage_options',
 				'menu_slug'   => $this->parent->_token . '_settings',
 				'function'    => array( $this, 'settings_page' ),
@@ -179,26 +179,15 @@ class Arnold_Analytics_Settings {
 	private function settings_fields() {
 		$settings['constants'] = array(
 			'title'			=> __( 'Required constants', 'arnold-analytics' ),
-			'description'	=> __( 'Configure some constants used by Arnold Analytics.', 'arnold-analytics' ),
+			'description'	=> __( 'Configure some constants used by Indiemetrics.', 'arnold-analytics' ),
 			'fields'		=> array(
 				array(
-					'id'			=> 'script_key',
-					'label'			=> __( 'API key', 'arnold-analytics' ),
-					'description' 	=> __( 'Enter your script key, to be found in the Arnold Analytics dashboard under Settings', 'arnold-analytics' ),
+					'id'			=> 'site_id',
+					'label'			=> __( 'Site ID', 'arnold-analytics' ),
+					'description' 	=> __( 'Enter your site ID, which you can find in the Indiemetrics dashboard under Account', 'arnold-analytics' ),
 					'type'			=> 'text',
 					'default'		=> '',
-					'placeholder'	=> __( 'Like e51fd7e920880c0f7c60741adc39c6a0', 'arnold-analytics' )
-				),
-				array(
-					'id'          => 'location_precision',
-					'label'       => __( 'Location precision', 'arnold-analytics' ),
-					'description' => __( 'Specify how precise you want the location data to be.', 'arnold-analytics' ),
-					'type'        => 'select',
-					'options'     => array(
-						'off'    => '5 km',
-						'on'    => '100 m (requires user opt-in)',
-					),
-					'default'     => 'off',
+					'placeholder'	=> __( 'Like mysite_be_1234567890123', 'arnold-analytics' )
 				),
 			)
 		);

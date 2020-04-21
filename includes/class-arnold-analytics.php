@@ -207,8 +207,11 @@ class Arnold_Analytics {
   		$is_running = !current_user_can('editor') && !current_user_can('administrator');
 		if ($is_running) {
 			add_action('wp_footer', function() {
-				echo '<script src="https://app.usearnold.com/assets/pixel.min.js" data-arnold-analytics="' . get_option('wparnold_script_key') . '" data-arnold-analytics-location="' . get_option('wparnold_location_precision') . '"></script>' . PHP_EOL;
-				echo '<noscript><img src="https://app.usearnold.com/hello?key=' . get_option('wparnold_script_key') . '" alt=""></noscript>' . PHP_EOL;
+				//echo '<script src="https://app.usearnold.com/assets/pixel.min.js" data-arnold-analytics="' . get_option('wparnold_script_key') . '" data-arnold-analytics-location="' . get_option('wparnold_location_precision') . '"></script>' . PHP_EOL;
+				//echo '<noscript><img src="https://app.usearnold.com/hello?key=' . get_option('wparnold_script_key') . '" alt=""></noscript>' . PHP_EOL;
+				echo '<script src="https://app.indiemetrics.net/hello.js"></script>';
+				echo '<script> ogma("create", "' . get_option('wparnold_site_id') . '"); ogma("send", "pageview"); </script>';
+				echo '<noscript> <img src="https://app.indiemetrics.net/event/add?create=' . get_option('wparnold_site_id') . '&type=pageview" alt="Indiemetrics"> </noscript>';
 			}, 10);
 		}
 		else {

@@ -2,14 +2,14 @@
 # This file is distributed under the same license as the Arnold Analytics package.
 msgid ""
 msgstr ""
-"Project-Id-Version: Arnold Analytics 1.0\n"
+"Project-Id-Version: Indiemetrics 1.0\n"
 "POT-Creation-Date: 2020-03-08 18:02:06+01:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "PO-Revision-Date: 2020-03-08 18:02:06+01:00\n"
-"Last-Translator: Arne Govaerts <arne@usearnold.com>\n"
-"Language-Team: Language <support@usearnold.com>\n"
+"Last-Translator: Arne Govaerts <arne@indiemetrics.net>\n"
+"Language-Team: Language <info@indiemetrics.net>\n"
 
 #: includes/class-arnold-analytics-settings.php:70
 #: includes/class-arnold-analytics-settings.php:405
@@ -177,11 +177,11 @@ msgstr ""
 msgid "Cheatin&#8217; huh?"
 msgstr ""
 #. Plugin Name of the plugin/theme
-msgid "Arnold Analytics"
+msgid "Indiemetrics"
 msgstr ""
 
 #. Plugin URI of the plugin/theme
-msgid "https://usearnold.com"
+msgid "https://indiemetrics.net"
 msgstr ""
 
 #. Author of the plugin/theme
@@ -189,5 +189,5 @@ msgid "Arne Govaerts"
 msgstr ""
 
 #. Author URI of the plugin/theme
-msgid "https://usearnold.com"
+msgid "https://indiemetrics.net"
 msgstr ""
