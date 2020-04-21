@@ -279,7 +279,7 @@ class Arnold_Analytics_Settings {
 
 		// Build page HTML.
 		$html      = '<div class="wrap" id="' . $this->parent->_token . '_settings">' . "\n";
-			$html .= '<h2>' . __( 'Plugin Settings', 'arnold-analytics' ) . '</h2>' . "\n";
+			$html .= '<h2>' . __( 'Indiemetrics plugin settings', 'arnold-analytics' ) . '</h2>' . "\n";
 
 			$tab = '';
 		//phpcs:disable
